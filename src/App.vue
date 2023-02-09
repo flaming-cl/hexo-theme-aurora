@@ -8,8 +8,8 @@
       :style="cssVariables"
     >
       <HeaderMain />
-      <div class="app-banner app-banner-image" :style="headerImage" />
-      <div class="app-banner app-banner-screen" :style="headerBaseBackground" />
+      <div class="app-banner app-banner-image" />
+      <div class="app-banner app-banner-screen" :style="BannerBaseBackground" />
       <div class="relative z-10">
         <router-view v-slot="{ Component }">
           <transition name="fade-slide-y" mode="out-in">
@@ -26,7 +26,6 @@
       <MobileMenu />
     </div>
   </div>
-  <Navigator />
   <Dia v-if="!isMobile && configReady" />
   <teleport to="head">
     <title>{{ title }}</title>
@@ -200,6 +199,12 @@ export default defineComponent({
           opacity: commonStore.headerImage !== '' ? 0.91 : 0.99
         }
       }),
+      BannerBaseBackground: computed(() => {
+        return {
+          background: appStore.themeConfig.theme.banner_gradient_css,
+          opacity: commonStore.headerImage !== '' ? 0.91 : 0.99
+        }
+      }),
       wrapperStyle: computed(() => wrapperStyle.value),
       handleEscKey: appStore.handleEscKey,
       isMobile: computed(() => commonStore.isMobile),
@@ -247,6 +252,7 @@ body {
     .app-container {
       color: var(--text-normal);
       margin: 0 auto;
+      max-width: 1308px;
     }
   }
 

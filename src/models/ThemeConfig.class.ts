@@ -217,8 +217,14 @@ export class Theme implements ObTheme {
     color_2: '#5433ff',
     color_3: '#ff0099'
   }
+  banner_gradient_css =
+    'linear-gradient(192deg, rgb(100 180 189), rgb(140 185 255) 41.07%, rgb(255, 109, 140) 76.05%)'
   header_gradient_css =
     'linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #ff0099 76.05%)'
+  feature_gradient_css =
+    'linear-gradient(298deg, rgb(40 133 148), rgb(18 104 157) 41.07%, rgb(111 98 98) 76.05%)'
+  article_gradient_css =
+    'linear-gradient(192deg, rgb(100 180 189), rgb(140 185 255) 41.07%, rgb(255, 109, 140) 76.05%)'
   background_gradient_style = {
     background:
       'linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #ff0099 76.05%)',

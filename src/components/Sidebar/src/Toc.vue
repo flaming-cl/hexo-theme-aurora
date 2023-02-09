@@ -12,7 +12,6 @@
           />
         </div>
       </transition>
-      <Navigator />
     </div>
   </Sticky>
 </template>

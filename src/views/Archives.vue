@@ -15,7 +15,7 @@
         min-h-screen
       "
     >
-      <ul class="timeline timeline-centered">
+      <ul class="timeline">
         <template
           v-for="posts in archives"
           :key="`${posts.month}-${posts.year}}`"

@@ -53,7 +53,9 @@
           v-if="post.title"
           :to="{ name: 'post', params: { slug: post.slug } }"
         >
-          <h1 data-dia="article-link">{{ post.title }}</h1>
+          <h1 data-dia="article-link" style="height: 48px">
+            {{ post.title }}
+          </h1>
         </router-link>
         <ob-skeleton v-else tag="h1" height="3rem" />
 
@@ -128,7 +130,7 @@ export default defineComponent({
 
     return {
       gradientBackground: computed(() => {
-        return { background: appStore.themeConfig.theme.header_gradient_css }
+        return { background: appStore.themeConfig.theme.article_gradient_css }
       }),
       post: computed(() => props.data),
       handleAuthorClick,

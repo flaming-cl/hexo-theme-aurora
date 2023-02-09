@@ -9,7 +9,7 @@
     <span v-if="themeConfig.theme.feature">
       <Title id="article-list" :title="'titles.articles'" icon="article" />
     </span>
-    <div class="main-grid">
+    <div class="">
       <div class="flex flex-col relative">
         <ul :class="tabClass">
           <li
@@ -77,8 +77,6 @@
       </div>
       <div>
         <Sidebar>
-          <Profile :author="mainAuthor" />
-          <RecentComment v-if="recentCommentEnable" />
           <TagBox />
         </Sidebar>
       </div>

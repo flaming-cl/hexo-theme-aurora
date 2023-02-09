@@ -189,15 +189,9 @@
             <Article :data="post.next_post" />
           </div>
         </div>
-        <template v-if="post.title && post.text && post.uid">
-          <div id="comments">
-            <Comment :title="post.title" :body="post.text" :uid="post.uid" />
-          </div>
-        </template>
       </div>
       <div>
         <Sidebar>
-          <Profile :author="post.author.slug || ''" />
           <Toc :toc="post.toc" />
         </Sidebar>
       </div>

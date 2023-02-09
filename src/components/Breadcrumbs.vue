@@ -1,9 +1,4 @@
-<template>
-  <ul class="breadcrumbs flex flex-row gap-6 text-white">
-    <li>{{ t('menu.home') }}</li>
-    <li>{{ current }}</li>
-  </ul>
-</template>
+
 
 <script lang="ts">
 import { defineComponent } from 'vue'

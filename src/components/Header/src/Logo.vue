@@ -17,15 +17,7 @@
         {{ themeConfig.site.author }}
       </span>
       <span v-else class="flex text-4xl animation-text">LOADING</span>
-      <span class="font-extrabold text-xs uppercase">
-        {{ themeConfig.site.nick || 'BLOG' }}
-      </span>
     </div>
-    <img
-      class="logo-image"
-      :src="themeConfig.site.logo || themeConfig.site.avatar"
-      alt="site-logo"
-    />
   </div>
 </template>
 

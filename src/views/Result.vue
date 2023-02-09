@@ -36,9 +36,9 @@
       </div>
       <div>
         <Sidebar>
-          <CategoryBox />
+<!--          <CategoryBox />-->
           <TagBox />
-          <RecentComment />
+<!--          <RecentComment />-->
         </Sidebar>
       </div>
     </div>

@@ -16,7 +16,6 @@
       <div class="feature-thumbnail">
         <img v-if="post.cover" class="ob-hz-thumbnail" v-lazy="post.cover" />
         <img v-else class="ob-hz-thumbnail" src="@/assets/default-cover.jpg" />
-        <span class="thumbnail-screen" :style="bannerHoverGradient" />
       </div>
       <div class="feature-content">
         <span>
@@ -128,7 +127,7 @@ export default defineComponent({
 
     return {
       bannerHoverGradient: computed(() => {
-        return { background: appStore.themeConfig.theme.header_gradient_css }
+        return { background: appStore.themeConfig.theme.feature_gradient_css }
       }),
       post,
       handleAuthorClick,
